@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-body">
+        <div class="div-perfil">
+            <img class="img-perfil" src="{{imgPerfil}}">
+            <div class="div-dados-Perfil">
+                <h4 class="card-title">{{cardTitle}}</h4>
+                <h6 class="">{{cardSubtitle}}</h6>
+            </div>
+        </div>
+            <p class="card-text div-text-depoimento">{{cardText}}</p>
+      {{notaAvaliacao}}
+      <div class="estrelas">
+        <input *ngIf="notaAvaliacao != 0" type="radio" disabled id="{{cardTitle}}-empty" name="{{cardTitle}}" value="" />
+        <input *ngIf="notaAvaliacao == 0" type="radio" disabled id="{{cardTitle}}-empty" name="{{cardTitle}}" checked value="" />
+        <label for="{{cardTitle}}-1"><i class="fa"></i></label>
+        <input *ngIf="notaAvaliacao != 1" type="radio" disabled id="{{cardTitle}}-1" name="{{cardTitle}}" value="1"/>
+        <input *ngIf="notaAvaliacao == 1" type="radio" disabled id="{{cardTitle}}-1" name="{{cardTitle}}" checked value="1"/>
+        <label for="{{cardTitle}}-2"><i class="fa"></i></label>
+        <input *ngIf="notaAvaliacao != 2" type="radio" disabled id="{{cardTitle}}-2" name="{{cardTitle}}"  value="2"/>
+        <input *ngIf="notaAvaliacao == 2" type="radio" disabled id="{{cardTitle}}-2" name="{{cardTitle}}" checked value="2"/>
+        <label for="{{cardTitle}}-3"><i class="fa"></i></label>
+        <input *ngIf="notaAvaliacao != 3" type="radio" disabled id="{{cardTitle}}-3" name="{{cardTitle}}" value="3"/>
+        <input *ngIf="notaAvaliacao == 3" type="radio" disabled id="{{cardTitle}}-3" name="{{cardTitle}}" checked value="3"/>
+        <label for="{{cardTitle}}-4"><i class="fa"></i></label>
+        <input *ngIf="notaAvaliacao != 4" type="radio" disabled id="{{cardTitle}}-4" name="{{cardTitle}}" value="4"/>
+        <input *ngIf="notaAvaliacao == 4" type="radio" disabled id="{{cardTitle}}-4" name="{{cardTitle}}" checked value="4"/>
+        <label for="{{cardTitle}}-5"><i class="fa"></i></label>
+        <input *ngIf="notaAvaliacao != 5" type="radio" disabled id="{{cardTitle}}-5" name="fb" value="5"/>
+        <input *ngIf="notaAvaliacao == 5" type="radio" disabled id="{{cardTitle}}-5" name="fb" checked value="5"/>
+      </div>
+    </div>
+  </div>

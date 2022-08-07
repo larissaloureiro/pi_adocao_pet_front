@@ -1,0 +1,23 @@
+@import "../../../../styles.scss";
+
+img{
+    width: 240px;
+    height: 242px;
+    margin-top: 30px;
+    object-fit: cover;
+}
+
+.card{
+    align-items: center;
+    width: 291px;
+}
+
+a{
+    color: var(--bs-body-color) !important;
+}
+.backgroundBlue{
+    background-color: var(--bs-secondary) !important;
+}
+.backgroundYellow{
+    background-color: var(--bs-primary) !important;
+}
