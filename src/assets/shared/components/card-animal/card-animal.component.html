@@ -1,0 +1,9 @@
+<div class="card text-white bg-primary mb-3 "
+[ngClass]="{'backgroundYellow': background === 'yellow', 'backgroundBlue' : background === 'blue' }" style="max-width: 20rem;">
+    <img src="{{imagemAnimal}}">
+    <div class="card-body">
+      <h4 class="card-title">{{nomeAnimal}}</h4>
+      <p class="card-text">{{descricaoAnimal}}</p>
+      <a [routerLink]="link"><u>Quero saber mais</u></a>  
+    </div>
+  </div>
