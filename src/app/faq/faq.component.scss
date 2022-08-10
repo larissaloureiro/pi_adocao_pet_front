@@ -1,0 +1,35 @@
+@import "../../styles.scss";
+
+section{
+   width: 60%;
+   max-width: 600px;
+   margin: auto;
+}
+
+section details summary{
+   background-color: var(--bs-secondary);
+   padding: 2%;
+   border-bottom: 5px solid #0881a0;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   color: #fff;
+   font-weight: 600;
+}
+
+section details p{
+   background-color: #fff;
+   color: #282828;
+   padding: 2%;
+}
+
+.h2-titulo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 100px;
+   margin-bottom: 30px;
+   color: var(--bs-primary);
+   font-size: 32px;
+   font-weight: bold;
+   line-height: 33px;
+}
