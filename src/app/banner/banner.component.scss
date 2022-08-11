@@ -1,0 +1,21 @@
+.banner {
+  background-size: cover;
+  height: 27vw;
+  width: 100%;
+  z-index: 0;
+  padding: 3vw;
+}
+
+#texto {
+  z-index: 1;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+#botaoCadastro {
+  width: 10vw;
+  font-size: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  z-index: 2;
+}
