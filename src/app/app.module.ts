@@ -10,13 +10,18 @@ import { QueroDoarComponent } from './quero-doar/quero-doar.component';
 
 import { CadastroUsuarioModule } from './cadastro-usuario/cadastro-usuario.module';
 import { TemplateModule } from './template/template.module';
+import { HomeModule } from './home/home.module';
+import { LoginModule } from './login/login.module';
+import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+import { ListaAnimaisModule } from './lista-animais/lista-animais.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FaqComponent,
     ContatoComponent,
+    FaqComponent,
+    QuemSomosComponent,
     QueroDoarComponent
   ],
   imports: [
@@ -25,6 +30,9 @@ import { TemplateModule } from './template/template.module';
     AppRoutingModule,
     CadastroUsuarioModule,
     TemplateModule,
+    HomeModule,
+    ListaAnimaisModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
