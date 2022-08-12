@@ -9,6 +9,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { QueroDoarComponent } from './quero-doar/quero-doar.component';
 
 import { CadastroUsuarioModule } from './cadastro-usuario/cadastro-usuario.module';
+import { TemplateModule } from './template/template.module';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { CadastroUsuarioModule } from './cadastro-usuario/cadastro-usuario.modul
     HttpClientModule,
     AppRoutingModule,
     CadastroUsuarioModule,
+    TemplateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
