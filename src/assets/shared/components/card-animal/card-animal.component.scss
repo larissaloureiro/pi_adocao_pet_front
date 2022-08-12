@@ -1,23 +1,19 @@
 @import "../../../../styles.scss";
 
-img{
-    width: 240px;
-    height: 242px;
-    margin-top: 30px;
+img {
+    width: 15vw;
+    height: 15vw;
+    margin-bottom: 15px;
     object-fit: cover;
 }
 
-.card{
+.card {
     align-items: center;
-    width: 291px;
+    height: 28vw;
 }
 
-a{
+a {
     color: var(--bs-body-color) !important;
-}
-.backgroundBlue{
-    background-color: var(--bs-secondary) !important;
-}
-.backgroundYellow{
-    background-color: var(--bs-primary) !important;
+    position: absolute;
+    bottom: var(--bs-card-spacer-y);
 }

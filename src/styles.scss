@@ -7,6 +7,7 @@
   --bs-body-color: #792C13;
   --bs-primary: #F4B333;
   --bs-secondary: #94B4BE;
+  --bs-link-color: #792C13
 }
 
 body {
@@ -73,5 +74,36 @@ hr {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #94B4BE;
   --bs-btn-disabled-border-color: #94B4BE;
+}
+
+
+app-card-animal {
+  width: 18vw;
+
+  &:nth-child(odd) {
+    .card {
+      background-color: var(--bs-secondary);
+    }
+
+    &:nth-child(8n + 1) .card,
+    &:nth-child(8n + 2) .card,
+    &:nth-child(8n + 3) .card,
+    &:nth-child(8n + 4) .card {
+      background-color: var(--bs-primary);
+    }
+  }
+
+  &:nth-child(even) {
+    .card {
+      background-color: var(--bs-primary);
+    }
+
+    &:nth-child(8n + 1) .card,
+    &:nth-child(8n + 2) .card,
+    &:nth-child(8n + 3) .card,
+    &:nth-child(8n + 4) .card {
+      background-color: var(--bs-secondary);
+    }
+  }
 }
 
