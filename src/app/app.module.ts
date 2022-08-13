@@ -14,6 +14,7 @@ import { HomeModule } from './home/home.module';
 import { LoginModule } from './login/login.module';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component';
 import { ListaAnimaisModule } from './lista-animais/lista-animais.module';
+import { MinhasAdocoesComponent } from './minhas-adocoes/minhas-adocoes.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ListaAnimaisModule } from './lista-animais/lista-animais.module';
     ContatoComponent,
     FaqComponent,
     QuemSomosComponent,
-    QueroDoarComponent
+    QueroDoarComponent,
+    MinhasAdocoesComponent
   ],
   imports: [
     BrowserModule,
