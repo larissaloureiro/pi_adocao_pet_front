@@ -9,6 +9,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { QueroDoarComponent } from './quero-doar/quero-doar.component';
 
 import { CadastroUsuarioModule } from './cadastro-usuario/cadastro-usuario.module';
+import { DetalheAnimalModule } from './detalhe-animal/detalhe-animal.module';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { CadastroUsuarioModule } from './cadastro-usuario/cadastro-usuario.modul
     HttpClientModule,
     AppRoutingModule,
     CadastroUsuarioModule,
+    DetalheAnimalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
