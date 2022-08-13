@@ -10,6 +10,11 @@ import { EnderecoService } from '../service/endereco.service';
   styleUrls: ['./cadastro-usuario.component.scss']
 })
 export class CadastroUsuarioComponent implements OnInit {
+
+  senha;
+  confirmaSenha;
+  senhaValida = false;
+
   usuario: Usuario = {
     nome: "",
     telefone: "",
@@ -30,6 +35,16 @@ export class CadastroUsuarioComponent implements OnInit {
     this.usuario.tipo = "TUTOR"
   }
 
+  validaConfirmaSenha(value){
+    if(this.senha == this.confirmaSenha){
+      console.log("Senhas iguais")
+      this.senhaValida = true
+    }else{
+      console.log("Senhas diferentes")
+      
+      this.senhaValida = false
+    }
+  }
   buscarCep(valor: string, usuarioForm) {
     this._enderecoService.buscarEnderecoService(valor)
       .subscribe((dados) => this.preencheForm(dados, usuarioForm.form));
@@ -49,9 +64,13 @@ export class CadastroUsuarioComponent implements OnInit {
   }
 
   onSubmit() {
-    this.service
-      .inserirUsuario(this.usuario)
-      .subscribe( response => console.log(response));
+    if(this.senhaValida){
+      this.service
+        .inserirUsuario(this.usuario)
+        .subscribe( response => console.log(response));
 
+    }else{
+      alert("Senhas não conferem")
+    }
   }
 }

@@ -14,12 +14,26 @@
             <input type="date" class="form-text form-control" name="dataNascimento" id="dataNascimento"
               [(ngModel)]="usuario.dataNascimento" required />
           </div>
+          
         </div>
 
         <!-- INSERIR LOGIN  -->
 
         <hr />
         <h4>Documentos</h4>
+        <div lass="row mb-2">
+          <div class="col-6">
+            <label for="dataNascimento" class="col-form-label">Senha: </label>
+            <input type="password" class="form-text form-control" name="senha" id="senha"
+              [(ngModel)]="senha" required />
+          </div><div class="col-6">
+            <label for="confirmaSenha" class="col-form-label">Confirma Senha: </label>
+            <input type="password" class="form-text form-control" name="confirmaSenha" id="confirmaSenha"
+              (keyup)="validaConfirmaSenha($event.target.value)"
+              [(ngModel)]="confirmaSenha" required />
+              <label *ngIf="!this.senhaValida"  class="col-form-label">Senhas não conferem</label>
+          </div>
+        </div>
         <div class="row mb-2">
           <div class="col-6">
             <label for="rg" class="col-form-label">RG: </label>

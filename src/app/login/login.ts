@@ -1,6 +1,6 @@
 export class Login {
-    username: string;
-    senha: string;
+    username: string = "";
+    password: string = "";
     
   }
   
