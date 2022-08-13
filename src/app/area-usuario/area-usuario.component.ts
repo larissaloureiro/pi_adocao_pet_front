@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AreaUsuarioComponent implements OnInit {
 
+  opcaoMenu: string;
+
   constructor() { }
+
+  alteraMenu(value) {
+    this.opcaoMenu=value;
+  }
+
 
   ngOnInit(): void {
   }

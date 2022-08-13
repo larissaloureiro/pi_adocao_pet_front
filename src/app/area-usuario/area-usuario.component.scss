@@ -3,8 +3,37 @@
 .card{
  background-color: var(--bs-primary) !important;
  color: var(--bs-body-color) !important;
+ height: 417px;
+ width: 285px;
+}
+
+h2{
+    color: var(--bs-body-color) !important;
+}
+
+p{
+    color: black;
+}
+
+p > a {
+    color: var(--bs-body-color) !important;
+    cursor: pointer;
+}
+
+.tudo {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .dados-pessoais{
-    color: black !important;
+    margin-left: 50px;
+}
+
+.card-header{
+    margin-top: 20px;
+}
+
+.sair{
+    margin-top: 80px;
 }

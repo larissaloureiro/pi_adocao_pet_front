@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AreaUsuarioComponent } from './area-usuario/area-usuario.component';
 import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FaqComponent } from './faq/faq.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'lista-animais', component: ListaAnimaisComponent },
   { path: 'login', component: LoginComponent },
   { path: 'quem-somos', component: QuemSomosComponent },
-  { path: 'quero-doar', component: QueroDoarComponent }
+  { path: 'quero-doar', component: QueroDoarComponent },
+  { path: 'area-usuario', component: AreaUsuarioComponent }
 ];
 
 @NgModule({

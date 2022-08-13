@@ -15,6 +15,7 @@ import { LoginModule } from './login/login.module';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component';
 import { ListaAnimaisModule } from './lista-animais/lista-animais.module';
 import { AreaUsuarioComponent } from './area-usuario/area-usuario.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({

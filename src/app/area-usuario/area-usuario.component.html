@@ -1,17 +1,18 @@
+<div class="tudo">
 <div class="card text-white bg-primary mb-3 " style="max-width: 20rem;">
-  <div class="card-header"><h2>Ola Gustavo!!</h2></div>
+  <div class="card-header"><h2>Bem Vindo Gustavo!!</h2></div>
   <div class="card-body">
     <h5 class="card-title">
-      <p><a>Meus dados pessoais</a></p>
-      <p><a>Minhas adoções</a></p>
-      <p><a>Sair</a></p>
+      <p (click)="alteraMenu('Dados Pessoais')"><a>Meus dados pessoais</a></p>
+      <p (click)="alteraMenu('Minhas adoções')"><a>Minhas adoções</a></p>
+      <p class="sair"><a><u>Sair</u></a></p>
    </h5>
   </div>
 </div>
 
-<div class="dados-pesoais"></div>
+<div *ngIf="opcaoMenu=='Dados Pessoais'" class="dados-pessoais">
 <h2>Dados Pessoais</h2>
-<p><b>Nome:</b> Gustavo Pires de Souza</p>
+    <p><b>Nome:</b> Gustavo Pires de Souza</p>
     <p><b>Telefone:</b> (12) 8144-2788</p>
     <p><b>Data de Nascimento:</b> 17/08/2022</p>
     <p><b>E-mail:</b> gupis@gmail.com.br</p>
@@ -24,3 +25,8 @@
     <p><b>Número:</b> 2544</p>
     <p><b>Complemento:</b>  Apt 789 - Bloco 3</p>
     <p><b>Referência:</b> Próxima ao mercado Estrela</p>
+
+    <a><u><b>Editar</b></u></a>
+
+  </div>
+  </div>
