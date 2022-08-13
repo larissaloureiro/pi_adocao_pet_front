@@ -13,10 +13,11 @@ import { CadastroAnimalModule } from './cadastro-animal/cadastro-animal.module';
 import { CadastroUsuarioModule } from './cadastro-usuario/cadastro-usuario.module';
 import { HomeModule } from './home/home.module';
 import { ListaAnimaisModule } from './lista-animais/lista-animais.module';
+
 import { LoginModule } from './login/login.module';
 import { TemplateModule } from './template/template.module';
 
-
+import { MinhasAdocoesComponent } from './minhas-adocoes/minhas-adocoes.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TemplateModule } from './template/template.module';
     ContatoComponent,
     FaqComponent,
     QuemSomosComponent,
-    QueroDoarComponent
+    QueroDoarComponent,
+    MinhasAdocoesComponent
   ],
   imports: [
     AppRoutingModule,
