@@ -10,6 +10,7 @@ import { QueroDoarComponent } from './quero-doar/quero-doar.component';
 
 import { CadastroUsuarioModule } from './cadastro-usuario/cadastro-usuario.module';
 import { DetalheAnimalModule } from './detalhe-animal/detalhe-animal.module';
+import { FiltroModule } from 'src/assets/shared/components/filtro/filtro.module';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { DetalheAnimalModule } from './detalhe-animal/detalhe-animal.module';
     HttpClientModule,
     AppRoutingModule,
     CadastroUsuarioModule,
-    DetalheAnimalModule
+    DetalheAnimalModule,
+    FiltroModule
   ],
   providers: [],
   bootstrap: [AppComponent]
