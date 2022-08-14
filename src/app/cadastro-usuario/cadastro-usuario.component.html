@@ -1,109 +1,128 @@
 <div class="container">
-  <form #usuarioForm="ngForm" (ngSubmit)="onSubmit()" class="form-group">
+  <form #usuarioForm="ngForm" (ngSubmit)="onSubmit(usuarioForm)" class="form-group">
     <h2>Cadastre-se</h2>
     <div class="form-group">
-      <div class="row mt-5 mb-3">
-        <div class="row mb-2">
-          <div class="col-9">
-            <label for="nome" class="col-form-label">Nome: </label>
-            <input type="text" class="form-text form-control" name="nome" id="nome" [(ngModel)]="usuario.nome" required
-              placeholder="Nome completo" />
-          </div>
-          <div class="col-3">
-            <label for="dataNascimento" class="col-form-label">Data de Nascimento: </label>
-            <input type="date" class="form-text form-control" name="dataNascimento" id="dataNascimento"
-              [(ngModel)]="usuario.dataNascimento" required />
-          </div>
+      <div class="row mb-2">
+        <div class="col-9">
+          <label for="nome" class="col-form-label">Nome:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input type="text" class="form-text form-control" name="nome" id="nome" [(ngModel)]="usuarioVO.nome" required
+            placeholder="Nome completo" />
+        </div>
+        <div class="col-3">
+          <label for="dataNascimento" class="col-form-label">Data de Nascimento:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input type="date" class="form-text form-control" name="dataNascimento" id="dataNascimento"
+            [(ngModel)]="usuarioVO.dataNascimento" required />
+        </div>
+      </div>
+
+      <hr />
+      <h4>Informações de acesso</h4>
+      <div class="row mb-2">
+        <div class="col-4">
+          <label for="username" class="col-form-label">Nome de usuário:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input type="text" class="form-text form-control" name="username" id="username" [(ngModel)]="loginVO.username" required
+            placeholder="Digite seu nome de usuário" />
+        </div>
+        <div class="col-4">
+          <label for="senha" class="col-form-label">Senha:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input type="password" class="form-text form-control" name="senha" id="senha" [(ngModel)]="loginVO.password" required
+            placeholder="Digite sua senha" />
+        </div>
+        <div class="col-4">
+          <label for="confirmaSenha" class="col-form-label">Confirme a senha:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input type="password" class="form-text form-control" name="confirmaSenha" id="confirmaSenha"
+            (keyup)="validaSenha($event.target.value)"
+            [(ngModel)]="confirmaSenha" required
+            placeholder="Confirme a senha" />
+          <p class="alerta" *ngIf="!this.senhasIguais">Senhas não conferem.</p>
+        </div>
+      </div>
+
+      <hr />
+      <h4>Documentos</h4>
+      <div class="row mb-2">
+        <div class="col-6">
+          <label for="rg" class="col-form-label">RG:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input type="text" class="form-text form-control" name="rg" id="rg" [(ngModel)]="usuarioVO.rg" required
+            placeholder="Apenas números" />
+        </div>
+        <div class="col-6">
+          <label for="cpf" class="col-form-label">CPF:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input type="text" class="form-text form-control" name="cpf" id="cpf"
+          (blur)="validaCpf($event.target.value)"
+          [(ngModel)]="usuarioVO.cpf" required
+            placeholder="Apenas números" />
+          <p class="alerta" *ngIf="!this.cpfValido">CPF inválido.</p>
+        </div>
+      </div>
+      <hr />
+      <h4>Contato</h4>
+      <div class="row mb-2">
+        <div class="col-6">
+          <label for="email" class="col-form-label">Email:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input type="email" class="form-text form-control" name="email" id="email" [(ngModel)]="usuarioVO.email"
+            required placeholder="nome@email.com" />
+        </div>
+        <div class="col-6">
+          <label for="telefone" class="col-form-label">Telefone:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input type="text" class="form-text form-control" name="telefone" id="telefone" [(ngModel)]="usuarioVO.telefone"
+            required placeholder="(11)5555-5555" />
+        </div>
+      </div>
+      <hr />
+      <h4>Endereço</h4>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="col-form-label">CEP:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input class="form-control" type="text" id="cep" name="cep" [(ngModel)]="usuarioVO.endereco.cep" #cep="ngModel" required
+            [ngModelOptions]="{standalone: true}" (blur)="buscarCep($event.target.value, usuarioForm)" />
+        </div>
+        <div class="col-md-9">
+          <label class="col-form-label">Logradouro:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input class="form-control" type="text" id="logradouro" name="logradouro" placeholder="Logradouro" required
+            [(ngModel)]="usuarioVO.endereco.logradouro" #logradouro="ngModel"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <label class="col-form-label">Bairro:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input class="form-control" type="text" id="bairro" name="bairro" placeholder="Bairro" required
+            [(ngModel)]="usuarioVO.endereco.bairro" #bairro="ngModel"/>
+        </div>
+        <div class="col-md-4">
+          <label class="col-form-label">Cidade:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input class="form-control" type="text" id="localidade" name="localidade" placeholder="Cidade" required
+            [(ngModel)]="usuarioVO.endereco.localidade" #localidade="ngModel" />
+        </div>
+        <div class="col-md-4">
+          <label class="col-form-label">UF:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input class="form-control" type="text" id="uf" name="uf" placeholder="Estado" required
+            [(ngModel)]="usuarioVO.endereco.uf" #uf="ngModel" />
         </div>
 
-        <!-- INSERIR LOGIN  -->
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="col-form-label">Número:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input class="form-control" type="text" id="numero" name="numero" [(ngModel)]="usuarioVO.endereco.numero"
+            placeholder="Numero" required/>
+        </div>
+        <div class="col-md-9">
+          <label class="col-form-label">Complemento:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input class="form-control" type="text" id="Complemento" name="complemento"
+            [(ngModel)]="usuarioVO.endereco.complemento" placeholder="Complemento"/>
+        </div>
+      </div>
 
-        <hr />
-        <h4>Documentos</h4>
-        <div class="row mb-2">
-          <div class="col-6">
-            <label for="rg" class="col-form-label">RG: </label>
-            <input type="text" class="form-text form-control" name="rg" id="rg" [(ngModel)]="usuario.rg" required
-              placeholder="Apenas números" />
-          </div>
-          <div class="col-6">
-            <label for="cpf" class="col-form-label">CPF: </label>
-            <input type="text" class="form-text form-control" name="cpf" id="cpf" [(ngModel)]="usuario.cpf" required
-              placeholder="Apenas números" />
-          </div>
-        </div>
-        <hr />
-        <h4>Contato</h4>
-        <div class="row mb-2">
-          <div class="col-6">
-            <label for="email" class="col-form-label">Email: </label>
-            <input type="email" class="form-text form-control" name="email" id="email" [(ngModel)]="usuario.email"
-              required placeholder="nome@email.com" />
-          </div>
-          <div class="col-6">
-            <label for="telefone" class="col-form-label">Telefone: </label>
-            <input type="text" class="form-text form-control" name="telefone" id="telefone"
-              [(ngModel)]="usuario.telefone" required placeholder="(11)5555-5555" />
-          </div>
-        </div>
-        <hr />
-        <h4>Endereço</h4>
-        <div class="row">
-          <div class="col-md-3">
-            <label class="col-form-label">CEP:</label>
-            <input class="form-control" type="text" id="cep" name="cep" [(ngModel)]="usuario.endereco.cep"
-              #cep="ngModel" [ngModelOptions]="{standalone: true}"
-              (blur)="buscarCep($event.target.value, usuarioForm)" />
-          </div>
-          <div class="col-md-9">
-            <label class="col-form-label">Logradouro:</label>
-            <input class="form-control" type="text" id="logradouro" name="logradouro" placeholder="Logradouro"
-              [(ngModel)]="usuario.endereco.logradouro" #logradouro="ngModel" disabled />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <label class="col-form-label">Bairro:</label>
-            <input class="form-control" type="text" id="bairro" name="bairro" placeholder="Bairro"
-              [(ngModel)]="usuario.endereco.bairro" #bairro="ngModel" disabled />
-          </div>
-          <div class="col-md-4">
-            <label class="col-form-label">Cidade:</label>
-            <input class="form-control" type="text" id="localidade" name="localidade" placeholder="Cidade"
-              [(ngModel)]="usuario.endereco.localidade" #localidade="ngModel" disabled />
-          </div>
-          <div class="col-md-4">
-            <label class="col-form-label">UF:</label>
-            <input class="form-control" type="text" id="uf" name="uf" placeholder="Estado"
-              [(ngModel)]="usuario.endereco.uf" #uf="ngModel" disabled />
-          </div>
-
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <label class="col-form-label">Número:</label>
-            <input class="form-control" type="text" id="numero" name="numero" [(ngModel)]="usuario.endereco.numero"
-              placeholder="Numero" />
-          </div>
-          <div class="col-md-9">
-            <label class="col-form-label">Complemento:</label>
-            <input class="form-control" type="text" id="Complemento" name="complemento"
-              [(ngModel)]="usuario.endereco.complemento" placeholder="Complemento" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <label class="col-form-label">Referência:</label>
-            <input class="form-control" type="text" id="referencia" name="referencia"
-              [(ngModel)]="usuario.endereco.referencia" placeholder="Ponto de referência" />
-          </div>
+      <div class="row">
+        <div class="col-md-12">
+          <label class="col-form-label">Referência:<abbr title="Este campo é obrigatório.">*</abbr></label>
+          <input class="form-control" type="text" id="referencia" name="referencia"
+            [(ngModel)]="usuarioVO.endereco.referencia" placeholder="Ponto de referência"/>
         </div>
       </div>
     </div>
 
-
-    <!-- <button type="button" class="btn btn-success" (click)="addUsuario()">Novo</button> -->
     <div class="row">
       <div class="col-md-12">
         <button type="submit" class="btn btn-primary"> Cadastrar </button>
@@ -112,33 +131,3 @@
   </form>
 
 </div>
-<!-- Para Teste apenas -->
-<!-- <hr />
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">NOME</th>
-      <th scope="col">EMAIL</th>
-      <th scope="col">TELEFONE</th>
-      <th scope="col">DATA DE CADASTRO</th>
-      <th scope="col">DATA DE NASCIMENTO</th>
-      <th scope="col">TIPO</th>
-      <th scope="col">CEP</th>
-      <th scope="col">LOGRADOURO</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr [id]="'lista -' + item.nome" *ngFor="let item of usuarios">
-      <td>{{item.nome | uppercase}}</td>
-      <td>{{item.email}}</td>
-      <td>{{item.telefone }}</td>
-      <td>{{item.dataCadastro | date: 'dd/MM/yyyy'}}</td>
-      <td>{{item.dataNascimento | date: 'dd/MM/yyyy'}}</td>
-      <td>{{item.tipo }}</td>
-      <td>{{item.endereco.cep }}</td>
-      <td>{{item.endereco.logradouro }}</td>
-
-    </tr>
-  </tbody>
-</table> -->
