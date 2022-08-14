@@ -9,11 +9,7 @@ import { LoginService } from '../service/login.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  login: Login = {
-    username: "",
-    senha: ""
-
-  }
+  login: Login;
 
   constructor(private service: LoginService) {
     this.login = new Login();
