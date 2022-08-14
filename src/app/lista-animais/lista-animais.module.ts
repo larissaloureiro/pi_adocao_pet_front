@@ -1,3 +1,4 @@
+import { FiltroModule } from 'src/assets/shared/components/filtro/filtro.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListaAnimaisComponent } from './lista-animais.component';
@@ -13,7 +14,8 @@ import { CardAnimalModule } from 'src/assets/shared/components/card-animal/card-
   imports: [
     CommonModule,
     RouterModule,
-    CardAnimalModule
+    CardAnimalModule,
+    FiltroModule
   ],
   exports: [
     ListaAnimaisComponent
