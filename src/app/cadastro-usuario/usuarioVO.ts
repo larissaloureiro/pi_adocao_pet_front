@@ -1,6 +1,6 @@
 import { Endereco } from "./endereco";
 
-export class Usuario {
+export class UsuarioVO {
   nome: string;
   telefone: string;
   email: string;
@@ -9,8 +9,6 @@ export class Usuario {
   dataNascimento: Date;
   dataCadastro: Date;
   endereco: Endereco;
-
-  tipo: string;
 
   constructor() {
     this.endereco = new Endereco();

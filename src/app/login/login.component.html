@@ -1,0 +1,25 @@
+<div class="container">
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit()" class="form-group">
+    <h2>Login</h2>
+    <div class="form-group">
+      <input type="text" class="form-text form-control" name="Username" id="username" [(ngModel)]="login.username"
+        required placeholder="E-mail" />
+
+
+      <label for="senha" class="form-label"><br></label>
+      <input type="password" class="form-text form-control" name="senha" id="senha" [(ngModel)]="login.senha" required
+        placeholder="Senha" />
+
+
+      <a href="#">Esqueci minha senha</a>
+
+      <button type="submit" class="btn btn-primary"> Entrar </button>
+    </div>
+  </form>
+
+  <h2>Não tenho uma conta!</h2>
+
+
+
+  <button type="button" class="btn btn-secondary"> Cadastrar </button>
+</div>

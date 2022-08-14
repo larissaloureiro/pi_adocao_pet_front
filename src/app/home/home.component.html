@@ -1,0 +1,50 @@
+<app-banner></app-banner>
+
+<div class="animais">
+  <h3 id="titulo-animal">Encontre seu novo amigo</h3>
+  <a id="link-animal" href="#" routerLink="/lista-animais">Ver mais</a>
+  <div class="lista-animais">
+    <app-card-animal *ngFor="let animal of animalService.animais | slice:0:2" [animal]="animal"></app-card-animal>
+  </div>
+</div>
+
+<div class="lista-depoimentos">
+  <div>
+    <h3 id="titulo-depoimento">O que estão falando <br />sobre a gente?</h3>
+    <p id="texto-depoimento">Estamos ansiosos para <br />conhecer sua história e <br />inspirar outras pessoas!</p>
+    <button type="button" class="btn btn-primary" id="botaoDepoimento">Adote seu PET</button>
+  </div>
+
+  <app-card-depoimento *ngFor="let depoimento of depoimentos | slice:0:2" [imgPerfil]="depoimento['foto']"
+    [cardTitle]="depoimento['nome']" [cardSubtitle]="depoimento['subtitulo']" [cardText]="depoimento['texto']"
+    [notaAvaliacao]="depoimento['notaAvaliacao']">
+  </app-card-depoimento>
+
+</div>
+
+
+
+
+
+<!-- <div class="depoimentos">
+  <div class="depoimentos-apresentacao">
+    <h3 id="titulo-depoimento">O que estão falando <br />sobre a gente?</h3>
+    <p id="texto-depoimento">Estamos ansiosos para <br />conhecer sua história e <br />inspirar outras pessoas!</p>
+    <a href="#">
+      <button type="button" class="btn btn-primary" id="botaoDepoimento">Adote seu PET</button>
+    </a>
+  </div>
+  <div class="row area-cards-depoimento">
+    <div class="cards-depoimento">
+      <div class="col">
+        Variable width content
+      </div>
+      <div class="col">
+        Variable width content
+      </div>
+      <div class="col">
+        Variable width content
+      </div>
+    </div>
+  </div>
+</div> -->

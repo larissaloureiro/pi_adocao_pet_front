@@ -1,0 +1,77 @@
+<div class="container">
+  <form #usuarioForm="ngForm" (ngSubmit)="onSubmit()" class="form-group">
+    <h2>Cadastrar novo animal</h2>
+    <div class="form-group">
+      <div class="row mb-2">
+        <div class="col-6">
+          <label for="nome" class="col-form-label">Nome: </label>
+          <input type="text" class="form-text form-control" name="nome" id="nome" [(ngModel)]="animal.nome" required
+            placeholder="Nome do animal" />
+        </div>
+        <div class="col-3">
+          <label for="raca" class="col-form-label">Raça: </label>
+          <input type="text" class="form-text form-control" name="raca" id="raca" [(ngModel)]="animal.raca" required
+            placeholder="Ex.: SRD" />
+        </div>
+        <div class="col-3">
+          <label for="especie" class="col-form-label">Espécie: </label>
+          <input type="text" class="form-text form-control" name="especie" id="especie" [(ngModel)]="animal.especie"
+            required placeholder="Ex.: Cachorro" />
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-12">
+          <label for="descricao" class="col-form-label">Descrição: </label>
+          <input type="text" class="form-text form-control" name="descricao" id="descricao"
+            [(ngModel)]="animal.descricao" required placeholder="Descrição do animal" />
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-4">
+          <label for="porte" class="col-form-label">Porte: </label>
+          <input type="text" class="form-text form-control" name="porte" id="porte" [(ngModel)]="animal.porte" required
+            placeholder="Ex.: Pequeno" />
+        </div>
+        <div class="col-4">
+          <label for="idade" class="col-form-label">Idade: </label>
+          <input type="number" min="0" max="20" class="form-text form-control" name="idade" id="idade"
+            [(ngModel)]="animal.idade" required placeholder="Idade do Animal" />
+        </div>
+        <div class="col-4">
+          <label for="sexo" class="col-form-label">Sexo: </label>
+          <select class="form-select" name="sexo" id="sexo" [(ngModel)]="animal.sexo" placeholder="Escolha o sexo do animal">
+            <option selected disabled>Escolha o sexo do animal</option>
+            <option value="fêmea">Fêmea</option>
+            <option value="macho">Macho</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-12">
+          <label for="fotoUrl" class="col-form-label">Foto do Animal: </label>
+          <input type="file" class="form-text form-control" id="fotoUrl" name="fotoUrl" accept="image/png, image/jpeg"
+            [(ngModel)]="animal.fotoUrl" required />
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <label class="col-form-label">Informações adicionais:</label>
+          <textarea rows="2" cols="20" class="form-control" id="infAdicionais" name="infAdicionais"
+            [(ngModel)]="animal.infAdicionais" placeholder="Informações adicionais"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-primary"> Cadastrar </button>
+      </div>
+    </div>
+  </form>
+
+</div>
