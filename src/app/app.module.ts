@@ -11,6 +11,7 @@ import { QueroDoarComponent } from './quero-doar/quero-doar.component';
 
 import { CadastroAnimalModule } from './cadastro-animal/cadastro-animal.module';
 import { CadastroUsuarioModule } from './cadastro-usuario/cadastro-usuario.module';
+import { DetalheAnimalModule } from './detalhe-animal/detalhe-animal.module';
 import { HomeModule } from './home/home.module';
 import { ListaAnimaisModule } from './lista-animais/lista-animais.module';
 
@@ -34,6 +35,7 @@ import { MinhasAdocoesComponent } from './minhas-adocoes/minhas-adocoes.componen
     HttpClientModule,
     CadastroAnimalModule,
     CadastroUsuarioModule,
+    DetalheAnimalModule,
     TemplateModule,
     HomeModule,
     ListaAnimaisModule,
