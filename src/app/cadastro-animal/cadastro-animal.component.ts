@@ -15,8 +15,8 @@ export class CadastroAnimalComponent implements OnInit {
     descricao: "",
     porte: "",
     idade: 0,
-    sexo: "", 
-    fotoUrl: "", 
+    sexo: "",
+    fotoBase64: "",
     dataCadastro: new Date(),
     disponivel: true,
     infAdicionais: ""
@@ -34,6 +34,5 @@ export class CadastroAnimalComponent implements OnInit {
     this.service
       .inserirAnimal(this.animal)
       .subscribe( response => console.log(response));
-
   }
 }

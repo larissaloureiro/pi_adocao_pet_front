@@ -6,7 +6,7 @@ export class Animal {
   porte: string;
   idade: number;
   sexo: string;
-  fotoUrl: string;
+  fotoBase64: string;
   dataCadastro: Date;
   disponivel: boolean;
   infAdicionais: string;
