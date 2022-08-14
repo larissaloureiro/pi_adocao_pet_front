@@ -22,6 +22,7 @@ import { LoginModule } from './login/login.module';
 import { TemplateModule } from './template/template.module';
 
 import { MinhasAdocoesComponent } from './minhas-adocoes/minhas-adocoes.component';
+import { AreaUsuarioModule } from './area-usuario/area-usuario.module';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { MinhasAdocoesComponent } from './minhas-adocoes/minhas-adocoes.componen
     TemplateModule,
     HomeModule,
     ListaAnimaisModule,
-    LoginModule
+    LoginModule,
+    AreaUsuarioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
