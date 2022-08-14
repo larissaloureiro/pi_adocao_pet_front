@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Usuario } from './usuario';
+
 import { CadastroUsuarioService } from '../service/cadastro-usuario.service';
-import { Endereco } from './endereco';
 import { EnderecoService } from '../service/endereco.service';
+import { UsuarioVO } from './usuarioVO';
+import { Endereco } from './endereco';
+import { LoginVO } from './loginVO';
+import { Cadastro } from './cadastro';
 
 @Component({
   selector: 'app-cadastro-usuario',
@@ -10,7 +13,12 @@ import { EnderecoService } from '../service/endereco.service';
   styleUrls: ['./cadastro-usuario.component.scss']
 })
 export class CadastroUsuarioComponent implements OnInit {
-  usuario: Usuario = {
+  confirmaSenha: string;
+  senhasIguais: boolean;
+
+  cadastro: Cadastro;
+
+  usuarioVO: UsuarioVO = {
     nome: "",
     telefone: "",
     email: "",
@@ -18,16 +26,26 @@ export class CadastroUsuarioComponent implements OnInit {
     cpf: "",
     dataNascimento: new Date(),
     dataCadastro: new Date(),
-    endereco: new Endereco(),
+    endereco: new Endereco()
+  }
 
-    tipo: "TUTOR"
+  loginVO: LoginVO = {
+    username: "",
+    password: ""
   }
 
   constructor(private service: CadastroUsuarioService, private _enderecoService: EnderecoService) {
-    this.usuario = new Usuario();
-    this.usuario.dataCadastro = new Date()
-    this.usuario.endereco = new Endereco()
-    this.usuario.tipo = "TUTOR"
+    this.usuarioVO = new UsuarioVO();
+    this.usuarioVO.dataCadastro = new Date()
+    this.usuarioVO.endereco = new Endereco()
+  }
+
+  validaSenha(value){
+    if(this.loginVO.password == this.confirmaSenha){
+      this.senhasIguais = true
+    }else{
+      this.senhasIguais = false
+    }
   }
 
   buscarCep(valor: string, usuarioForm) {
@@ -49,9 +67,16 @@ export class CadastroUsuarioComponent implements OnInit {
   }
 
   onSubmit() {
-    this.service
-      .inserirUsuario(this.usuario)
-      .subscribe( response => console.log(response));
+    if (this.senhasIguais) {
+      this.cadastro.usuarioVO = this.usuarioVO;
+      this.cadastro.loginVO = this.loginVO;
 
+      this.service
+        .inserirUsuario(this.cadastro)
+        .subscribe( response => console.log(response));
+    } else {
+      console.log("Existem campos incorretos.");
+    }
+    
   }
 }
