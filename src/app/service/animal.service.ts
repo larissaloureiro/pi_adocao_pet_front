@@ -14,7 +14,6 @@ export class AnimalService {
     this.carregarAnimais();
   }
 
-
   inserirAnimal(animal: Animal): Observable<Animal> {
     return this._http.post<Animal>(environment.urlAnimal, animal);
   }
@@ -23,6 +22,21 @@ export class AnimalService {
     const requisicao = await this._http
       .get<any>(environment.urlAnimal)
       .toPromise();
+    this.animais = requisicao._embedded.animalVOList;
+  }
+
+  async carregarAnimalPorId(id: number) {
+    const requisicao = await this._http
+      .get<any>(environment.urlAnimal + id)
+      .toPromise();
+    return requisicao;
+  }
+
+  async carregarAnimalPorEspecie(especie: string) {
+    const requisicao = await this._http
+      .get<any>(environment.urlAnimal + 'especie/' + especie)
+      .toPromise();
+    this.animais = []
     this.animais = requisicao._embedded.animalVOList;
   }
 }

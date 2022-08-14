@@ -1,19 +1,24 @@
-       <img class="img-detail" src="assets\img\rodolfo.png" alt="caramelo" style="float: left" /> 
-    <div>   
-            <h1 class="name">Rodolfo</h1>
-            <p class="description"> 
-            
-            <b>Raça:</b> SRD <br/> 
-            <b>Espécie:</b> Cachorro (<i>Canis familiaris</i>) <br/> 
-            <b>Descrição:</b> Cãozinho de cor caramelo, pelagem curta <br/>
-            <b>Porte:</b> Médio <br/>
-            <b>Idade:</b> 3 meses <br/>
-            <b>Sexo:</b> Macho <br/>
-            <b>Informações Adicionais:</b> Vacinado e vermifugado <br/>
+<app-filtro></app-filtro>
 
+<div class="row">
+  <div class="col-5">
+    <img
+      class="img-detail"
+      src="assets\img\rodolfo.png"
+      alt="caramelo"
+    />
+  </div>
+  <div class="col-7">
+    <h1 class="name">{{ animal.nome }}</h1>
+    <p class="description">
+      <b>Raça:</b> {{ animal.raca }} <br />
+      <b>Espécie:</b> {{ animal.especie }} <br />
+      <b>Descrição:</b> {{ animal.descricao }} <br />
+      <b>Porte:</b> {{ animal.porte }} <br />
+      <b>Idade:</b> {{ animal.idade }} <br />
+      <b>Sexo:</b> {{ animal.sexo }} <br />
+      <b>Informações Adicionais:</b> {{ animal.infAdicionais }} <br />
     </p>
-   
-        <div>
-              <button type="submit" class="btn btn-primary"> <b>Quero Adotar!</b> </button>
-            </div>
-        </div> 
+    <button type="submit" class="btn btn-primary"><b>Quero Adotar!</b></button>
+  </div>
+</div>

@@ -1,29 +1,26 @@
-.img-detail{
-    border-radius: 20px;
-    border: 2px solid #F4B333;
-    max-width:750px;
-    max-height:650px;
-    width: auto;
-    height: auto;
-    margin-right: 30px;
-    
+.img-detail {
+  border-radius: 20px;
+  border: 2px solid #f4b333;
+  max-width: 750px;
+  max-height: 650px;
+  width: 100%;
+  margin-bottom: 100px;
+  margin-right: 30px;
 }
-.btn{
-    width: 35%;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 50px;
- 
-    
-}
-.description{
-    color: black;
-    margin-left: 100px;
-    font-size: 34px;
 
+.btn {
+  width: 100%;
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
-.name{
-    font-size: 50px;
-    color: #F4B333
-    
+
+.description {
+  color: black;
+  font-size: 2em;
+}
+
+.name {
+  font-size: 50px;
+  color: #f4b333;
 }
