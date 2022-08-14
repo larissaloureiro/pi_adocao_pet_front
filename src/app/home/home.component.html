@@ -2,9 +2,9 @@
 
 <div class="animais">
   <h3 id="titulo-animal">Encontre seu novo amigo</h3>
-  <a id="link-animal" href="#" routerLink="/lista-animais">Ver mais</a>
+  <a id="link-animal" routerLink="/lista-animais">Ver mais</a>
   <div class="lista-animais">
-    <app-card-animal *ngFor="let animal of animalService.animais | slice:0:2" [animal]="animal"></app-card-animal>
+    <app-card-animal *ngFor="let animal of animalService.animais | slice:0:4" [animal]="animal"></app-card-animal>
   </div>
 </div>
 

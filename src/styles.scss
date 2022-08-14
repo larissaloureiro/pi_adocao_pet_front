@@ -7,7 +7,7 @@
   --bs-body-color: #792C13;
   --bs-primary: #F4B333;
   --bs-secondary: #94B4BE;
-  --bs-link-color: #792C13
+  --bs-link-color: #792C13;
 }
 
 body {
@@ -37,11 +37,7 @@ hr {
     outline: 0;
     box-shadow: none;
   }
-}
 
-
-
-.form-control {
   &::file-selector-button {
     background-color: var(--bs-primary);
   }
@@ -109,6 +105,31 @@ hr {
   --bs-btn-disabled-border-color: #94B4BE;
 }
 
+.btn-outline-primary {
+  --bs-btn-color: #F4B333;
+  --bs-btn-border-color: #F4B333;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #F4B333;
+  --bs-btn-hover-border-color: #F4B333;
+  --bs-btn-focus-shadow-rgb: 244, 179, 51;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #F4B333;
+  --bs-btn-active-border-color: #F4B333;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #F4B333;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #F4B333;
+  --bs-gradient: none;
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #F4B333;
+}
+
+app-filtro {
+  display: block;
+  margin: 30px 0;
+}
 
 app-card-animal {
   width: 18vw;
