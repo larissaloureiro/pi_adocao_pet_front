@@ -3,6 +3,6 @@
       <img src="{{animal.fotoBase64}}">
       <h4 class="card-title">{{animal.nome}}</h4>
       <p class="card-text">{{animal.descricao}}</p>
-      <a [routerLink]="[animal._links.self.href]"><u>Quero saber mais</u></a>
+      <a [routerLink]="['../detalhe-animal',animal.key]"><u>Quero saber mais</u></a>
     </div>
   </div>
