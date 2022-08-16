@@ -15,7 +15,7 @@ import { QueroDoarComponent } from './quero-doar/quero-doar.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'cadastro', component: CadastroUsuarioComponent },
-  { path: 'cadastro-animal', component: CadastroAnimalComponent},
+  // { path: 'cadastro-animal', component: CadastroAnimalComponent},
   { path: 'contato', component: ContatoComponent },
   { path: 'detalhe-animal/:id', component: DetalheAnimalComponent },
   { path: 'faq', component: FaqComponent },
