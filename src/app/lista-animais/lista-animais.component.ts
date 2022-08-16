@@ -8,6 +8,7 @@ import { AnimalService } from '../service/animal.service';
   styleUrls: ['./lista-animais.component.scss']
 })
 export class ListaAnimaisComponent implements OnInit {
+  paginaAtual: number = 1;
 
   constructor(private _route: ActivatedRoute, public animalService: AnimalService) { }
 

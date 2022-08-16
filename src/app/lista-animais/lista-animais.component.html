@@ -1,4 +1,13 @@
 <app-filtro></app-filtro>
 <div class="lista-animais">
-  <app-card-animal *ngFor="let animal of animalService.animais" [animal]="animal"></app-card-animal>
+  <app-card-animal
+    *ngFor="let animal of animalService.animais | paginate: { itemsPerPage: 8, currentPage: paginaAtual }"
+    [animal]="animal"
+  ></app-card-animal>
 </div>
+
+<pagination-controls
+  (pageChange)="paginaAtual = $event"
+  previousLabel="Anterior"
+  nextLabel="Próxima"
+></pagination-controls>

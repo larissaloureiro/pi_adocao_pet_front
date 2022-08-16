@@ -21,6 +21,7 @@
     "@angular/router": "~13.3.11",
     "bootstrap": "^5.2.0",
     "bootswatch": "^5.2.0",
+    "ngx-pagination": "^6.0.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
