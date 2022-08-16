@@ -1,27 +1,80 @@
-# PiAdocaoPetFront
+![Banner de Formatura Fachada Rústico Artesanal Azul Dourado (1)](https://user-images.githubusercontent.com/102121435/184267195-0f9eac9c-f0e4-4999-a067-be2e46a49db2.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
 
-## Development server
+# 💻 Sobre o projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  🐶 AdoPet é uma plataforma desenvolvida especialmente para ONGS de animais, as quais cuidam do processo de adoção por pessoas que prometem oferecer a esses animais toda a segurança e proteção que precisam. Existem muitos abrigos que estão lotados de animais e a procura física por eles não é o suficiente para dar conta da alta quantidade disponível. Assim, por mais que eles estejam em segurança, acabam segurando um espaço que poderia ser usado para atender um animal ferido, logo, com a plataforma disponível para essas ONGS anunciarem os animais disponíveis para adoção, esperamos que o alcance de pessoas seja cada vez maior e que esses bichinhos encontrem um lar. 
 
-## Code scaffolding
+Os admnistradores da plataforma irão realizar:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* O cadastro de animais disponíveis para adoção
+* O acopanhamento dos processos de adoção
 
-## Build
+Os usuários interessados em adotar poderão:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Realizar o cadastro 
+* Visualizar todos os animas disponíveis para adoção com suas informações
+* Acompanhar a autorização da adoção pela ONG 
+ 
+Além disso, poderão consultar na plataforma: 
 
-## Running unit tests
+* O contato da ONG
+* As informações da ONG
+* Como ajudar a ONG
+* Perguntas Frequentes para a ONG
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+# 📈 Diagramas de Classes e do Banco de Dados
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+![Projeto Integrador Serasa (2)](https://user-images.githubusercontent.com/102121435/184498688-74d5df7a-b106-4e84-b65c-1f275a1d410c.jpg)
+![Projeto Integrador Serasa (5)](https://user-images.githubusercontent.com/102121435/184498695-b472f84d-0051-446b-804c-a72dd8ffbfb5.jpg)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# 🎨 Layout
+
+O layout da aplicação está disponível no Figma:
+
+https://www.figma.com/proto/B2P8qH58kZD0rL4dhvwGUY/Pi_Adocao_Pet?node-id=4%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=4%3A3
+
+![Desktop - 1](https://user-images.githubusercontent.com/102121435/184269010-d097cdd7-332a-4bd1-8559-95a4c77f2048.png)
+![Desktop - 2](https://user-images.githubusercontent.com/102121435/184269219-ddb0919c-99b2-46f6-8f06-24f1eef43289.png)
+
+# 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+* [Java](https://www.java.com/pt-BR/)
+
+* [Spring](https://spring.io/)
+
+* [Angular](https://angular.io/)
+
+* [Postman](https://www.postman.com/)
+
+* [MySQL Workbench](https://www.mysql.com/products/workbench/)
+
+
+
+# 🚀 Como executar o projeto
+
+Podemos considerar este projeto como sendo divido em duas partes:
+
+* [Back End](https://github.com/larissaloureiro/pi_adocao_pet_back)
+* [Front End](https://github.com/larissaloureiro/pi_adocao_pet_front) 
+
+
+# Pré-requisitos
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: [Git](https://git-scm.com/), a IDE [Eclipse](https://www.eclipse.org/downloads/) e o [VSCode](https://code.visualstudio.com/)
+
+# 📝 Autoria
+
+Este projeto foi desenvolvido de forma didática durante o curso de desenvolvimento Web Full Stack do programa TRANSFORME-SE oferecido pela Digital House em parceria com a Serasa Experian, pelo grupo BUMBLEBEES das alunas: 
+
+* Tauane Bezerra [[GitHub](https://github.com/tauanebezerra)]
+* Jessica Mota [[GitHub](https://github.com/JessicaMotaa)]
+* Larissa Loureiro [[GitHub](https://github.com/larissaloureiro)]
+* Deise Alves [[GitHub](https://github.com/deisealves)]
+* Karina Campello [[GitHub](https://github.com/karinamcampello)]
+* Ariadne Rodrigues [[GitHub](https://github.com/AriRVasc)]
+
+![Banner de Formatura Fachada Rústico Artesanal Azul Dourado](https://user-images.githubusercontent.com/102121435/184271327-e7445e1a-f675-46f4-92ba-a19dab665fd4.png)
