@@ -15,13 +15,10 @@ import { DetalheAnimalModule } from './detalhe-animal/detalhe-animal.module';
 import { FiltroModule } from 'src/assets/shared/components/filtro/filtro.module';
 import { HomeModule } from './home/home.module';
 import { ListaAnimaisModule } from './lista-animais/lista-animais.module';
-import { AreaUsuarioComponent } from './area-usuario/area-usuario.component';
-import { RouterModule } from '@angular/router';
 
 import { LoginModule } from './login/login.module';
 import { TemplateModule } from './template/template.module';
 
-import { MinhasAdocoesComponent } from './minhas-adocoes/minhas-adocoes.component';
 import { AreaUsuarioModule } from './area-usuario/area-usuario.module';
 
 @NgModule({
