@@ -5,7 +5,7 @@
     <h5 class="card-title">
       <p (click)="alteraMenu('Dados Pessoais')"><a>Meus dados pessoais</a></p>
       <p *ngIf="this.permissoes.indexOf('ADMINISTRADOR') < 0" (click)="alteraMenu('Minhas adoções')"><a>Minhas adoções</a></p>
-      
+
       <p *ngIf="this.permissoes.indexOf('ADMINISTRADOR') >= 0" (click)="alteraMenu('Cadastrar Animal')"><a>Cadastrar um animal</a></p>
       <p *ngIf="this.permissoes.indexOf('ADMINISTRADOR') >= 0" (click)="alteraMenu('Minhas adoções')"><a>Adoções</a></p>
       <p (click)="logout()" class="sair"><a><u>Sair</u></a></p>
@@ -23,19 +23,19 @@
     <p><b>CPF:</b> {{this.usuario.cpf}}</p>
     <p><b>Logradouro:</b>  {{this.usuario.endereco.logradouro}}</p>
     <p><b>CEP:</b> {{this.usuario.endereco.cep}}</p>
-    <p><b>Localidade:</b> {{this.usuario.endereco.Localidade}}</p>
+    <p><b>Localidade:</b> {{this.usuario.endereco.localidade}}</p>
     <p><b>UF:</b> {{this.usuario.endereco.uf}}</p>
     <p><b>Número:</b> {{this.usuario.endereco.numero}}</p>
     <p><b>Complemento:</b>  {{this.usuario.endereco.complemento}}</p>
     <p><b>Referência:</b> {{this.usuario.endereco.referencia}}</p>
-<!-- 
-    <a><u><b>Editar</b></u></a> -->
+
+    <a><u><b>Editar</b></u></a>
 
   </div>
 
   <div *ngIf="opcaoMenu=='Minhas adoções'">
     <app-minhas-adocoes></app-minhas-adocoes>
-    
+
   </div>
 
   <app-cadastro-animal  *ngIf="opcaoMenu=='Cadastrar Animal'"></app-cadastro-animal>

@@ -1,4 +1,4 @@
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+// import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UsuarioDTO } from 'src/assets/shared/model/DTO/UsuarioDTO';
@@ -43,7 +43,7 @@ export class AreaUsuarioComponent implements OnInit {
 
   logout(){
     localStorage.clear();
-    
+
     this.router.navigate(['/login']);
   }
 

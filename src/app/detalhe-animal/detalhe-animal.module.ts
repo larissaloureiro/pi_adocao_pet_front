@@ -2,6 +2,7 @@ import { FiltroModule } from './../../assets/shared/components/filtro/filtro.mod
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DetalheAnimalComponent } from './detalhe-animal.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -9,7 +10,8 @@ import { DetalheAnimalComponent } from './detalhe-animal.component';
   declarations: [DetalheAnimalComponent],
   imports: [
     CommonModule,
-    FiltroModule
+    FiltroModule,
+    RouterModule
   ],
   exports:[
     DetalheAnimalComponent

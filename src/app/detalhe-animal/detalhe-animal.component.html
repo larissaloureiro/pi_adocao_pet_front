@@ -4,8 +4,8 @@
   <div class="col-5">
     <img
       class="img-detail"
-      src="assets\img\rodolfo.png"
-      alt="caramelo"
+      src="../assets/img/animais/{{animal.nome}}.jpg"
+      alt="Foto do animal"
     />
   </div>
   <div class="col-7">
@@ -19,6 +19,6 @@
       <b>Sexo:</b> {{ animal.sexo }} <br />
       <b>Informações Adicionais:</b> {{ animal.infAdicionais }} <br />
     </p>
-    <button type="submit" class="btn btn-primary"><b>Quero Adotar!</b></button>
+    <button type="button" routerLink="/login" class="btn btn-primary">Quero adotar!</button>
   </div>
 </div>

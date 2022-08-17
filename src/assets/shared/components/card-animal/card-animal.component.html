@@ -1,9 +1,9 @@
 <div class="card text-white" style="max-width: 20vw">
   <div class="card-body">
-    <img src="{{ animal.fotoBase64 }}" />
+    <img src="{{'../assets/img/animais/' + animal.nome + '.jpg'}}" />
     <h4 class="card-title">{{ animal.nome }}</h4>
     <p class="card-text">{{ animal.descricao }}</p>
-    <a [routerLink]="['../detalhe-animal', animal.key]">
+    <a [routerLink]="['../detalhe-animal/', animal.key]">
       Quero saber mais
     </a>
   </div>

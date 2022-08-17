@@ -9,14 +9,14 @@ import { AnimalService } from '../service/animal.service';
 export class HomeComponent implements OnInit {
   depoimentos = [
     {
-      foto: "",
+      foto: "carlos.png",
       nome: "Carlos Alberto",
       subtitulo: "Tutor da Maria",
       texto: "A adaptação com a família foi na hora! Todos se apaixonaram pela gatinha de início. O amor só cresceu e ela é o bebê da casa. O processo de adoção foi bem fácil. Recebi orientação para telar a minha casa, logo depois a ONG liberou a adoção.",
       notaAvaliacao: 4
     },
     {
-      foto: "",
+      foto: "flavia.png",
       nome: "Flavia Carvalho",
       subtitulo: "Tutora do Thor",
       texto: "Quando adotei recebi as orientações para a adaptação do pet. Por ser um ambiente novo, o começo da adaptação foi um pouco receosa para o pet, mas depois de alguns dias, ele já estava bem tranquilo.",
