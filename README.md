@@ -78,15 +78,15 @@ Este projeto foi desenvolvido de forma didática durante o curso de desenvolvime
 * Ariadne Rodrigues [[GitHub](https://github.com/AriRVasc)]
                               <table> 
   <tr>
-    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185013272-4336e35d-19df-45bd-8081-d7180c5dfd82.jpg" width="100px;" alt=""/><br /><sub><b>Tauane Bezerra</b></sub></a><br /><a href="https://github.com/tauanebezerra" title="GitHub">👨‍🚀</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/tauanebezerra/"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185013272-4336e35d-19df-45bd-8081-d7180c5dfd82.jpg" width="100px;" alt=""/><br /><sub><b>Tauane Bezerra</b></sub></a><br /><a href="https://github.com/tauanebezerra" title="GitHub">👨‍🚀</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/larissa-loureiro/"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185012544-b2bf84bb-4eec-4ac6-9756-aa1f57099cf0.jpg" width="100px;" alt=""/><br /><sub><b>Larissa Loureiro</b></sub></a><br /><a href="https://github.com/larissaloureiro" title="GitHub">👨‍🚀</a></td>
-    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185012613-62b6f758-fa9b-42de-825f-32297f395210.jpg" width="100px;" alt=""/><br /><sub><b>Jessica Mota</b></sub></a><br /><a href="https://github.com/JessicaMotaa" title="GitHub">👨‍🚀</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/jessicafmota/"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185012613-62b6f758-fa9b-42de-825f-32297f395210.jpg" width="100px;" alt=""/><br /><sub><b>Jessica Mota</b></sub></a><br /><a href="https://github.com/JessicaMotaa" title="GitHub">👨‍🚀</a></td>
    
   </tr>
   <tr>
-    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185012920-5b026c98-40d8-4972-9647-d4e004f81ebd.jpg" width="100px;" alt=""/><br /><sub><b>Karina Campello</b></sub></a><br /><a href="https://github.com/karinamcampello" title="GitHub">🚀</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/karina-campello-81a299113/"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185012920-5b026c98-40d8-4972-9647-d4e004f81ebd.jpg" width="100px;" alt=""/><br /><sub><b>Karina Campello</b></sub></a><br /><a href="https://github.com/karinamcampello" title="GitHub">🚀</a></td>
     <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185011488-28b7efb8-7c3a-4c21-a78a-1533add7ebdc.jpg" width="100px;" alt=""/><br /><sub><b>Ariadne Rodrigues</b></sub></a><br /><a href="https://github.com/AriRVasc" title="GitHub">🚀</a></td>
-    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185011840-61f974ae-ddac-4889-a9ac-2630285eb502.jpg" width="100px;" alt=""/><br /><sub><b>Deise Alves</b></sub></a><br /><a href="https://github.com/deisealves" title="GitHub">🚀</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/deise-alves-soares-928b801a0/"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185011840-61f974ae-ddac-4889-a9ac-2630285eb502.jpg" width="100px;" alt=""/><br /><sub><b>Deise Alves</b></sub></a><br /><a href="https://github.com/deisealves" title="GitHub">🚀</a></td>
    
   </tr>
 </table>
