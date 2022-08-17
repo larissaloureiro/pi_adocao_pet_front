@@ -59,6 +59,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 * [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
+* [Junit](https://junit.org/junit5/))
+
 
 
 # 🚀 Como executar o projeto
