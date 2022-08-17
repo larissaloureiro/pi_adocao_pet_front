@@ -3,9 +3,15 @@
 
 # 💻 Sobre o projeto
 
-  🐶 AdoPet é uma plataforma desenvolvida especialmente para ONGS de animais, as quais cuidam do processo de adoção por pessoas que prometem oferecer a esses animais toda a segurança e proteção que precisam. Existem muitos abrigos que estão lotados de animais e a procura física por eles não é o suficiente para dar conta da alta quantidade disponível. Assim, por mais que eles estejam em segurança, acabam segurando um espaço que poderia ser usado para atender um animal ferido, logo, com a plataforma disponível para essas ONGS anunciarem os animais disponíveis para adoção, esperamos que o alcance de pessoas seja cada vez maior e que esses bichinhos encontrem um lar. 
+  🐶 O Projeto AdoPet é uma plataforma web que gerencia todo o processo de adoção 
+de animais para uma ONG, com o intuito de fornecer nossos serviços para outras ONGS.
 
-Os admnistradores da plataforma irão realizar:
+O objetivo é ampliar a divulgação 
+e a velocidade do processo de adoção, reduzindo o número de animais alocados 
+nas entidades de acolhimento.
+
+
+Os administradores da plataforma irão realizar:
 
 * O cadastro de animais disponíveis para adoção
 * O acopanhamento dos processos de adoção
