@@ -85,7 +85,7 @@ Este projeto foi desenvolvido de forma didática durante o curso de desenvolvime
   </tr>
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/karina-campello-81a299113/"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185012920-5b026c98-40d8-4972-9647-d4e004f81ebd.jpg" width="100px;" alt=""/><br /><sub><b>Karina Campello</b></sub></a><br /><a href="https://github.com/karinamcampello" title="GitHub">🚀</a></td>
-    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185011488-28b7efb8-7c3a-4c21-a78a-1533add7ebdc.jpg" width="100px;" alt=""/><br /><sub><b>Ariadne Rodrigues</b></sub></a><br /><a href="https://github.com/AriRVasc" title="GitHub">🚀</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/devari/"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185011488-28b7efb8-7c3a-4c21-a78a-1533add7ebdc.jpg" width="100px;" alt=""/><br /><sub><b>Ariadne Rodrigues</b></sub></a><br /><a href="https://github.com/AriRVasc" title="GitHub">🚀</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/deise-alves-soares-928b801a0/"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185011840-61f974ae-ddac-4889-a9ac-2630285eb502.jpg" width="100px;" alt=""/><br /><sub><b>Deise Alves</b></sub></a><br /><a href="https://github.com/deisealves" title="GitHub">🚀</a></td>
    
   </tr>
