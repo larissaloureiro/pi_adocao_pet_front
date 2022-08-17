@@ -79,7 +79,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Este projeto foi desenvolvido de forma didática durante o curso de desenvolvimento Web Full Stack do programa TRANSFORME-SE oferecido pela Digital House em parceria com a Serasa Experian, pelo grupo BUMBLEBEES das alunas: 
 
 
-                              <table> 
+ <table>
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/tauanebezerra/"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185013272-4336e35d-19df-45bd-8081-d7180c5dfd82.jpg" width="100px;" alt=""/><br /><sub><b>Tauane Bezerra</b></sub></a><br /><a href="https://github.com/tauanebezerra" title="GitHub">👨‍🚀</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/larissa-loureiro/"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/102121435/185012544-b2bf84bb-4eec-4ac6-9756-aa1f57099cf0.jpg" width="100px;" alt=""/><br /><sub><b>Larissa Loureiro</b></sub></a><br /><a href="https://github.com/larissaloureiro" title="GitHub">👨‍🚀</a></td>
